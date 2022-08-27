@@ -8,7 +8,7 @@ export const Button = ({ children, className, fixed, ...restProps }) => {
         " " +
         (fixed ? classes.fixed : classes.flexible) +
         " " +
-        className
+        (className || '')
       }
       {...restProps}
     >

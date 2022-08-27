@@ -1,0 +1,36 @@
+.layout {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 100vw;
+  height: 300px;
+  transform: translateX(-50%);
+  overflow-y: hidden;
+}
+
+.background {
+  background-image: url('/public/assets/images/background/roulette.png');
+  background-repeat: no-repeat;
+  background-size: 135px;
+  background-position: 48% 185px;
+}
+
+.roulette {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 140px;
+  padding: 50px;
+  margin: 220px auto;
+  border-radius: 50%;
+  text-align: center;
+  transition: transform ease-in-out 400ms;
+}
+
+@media (max-width: 479.98px) {
+  .layout {
+    overflow: hidden;
+  }
+}

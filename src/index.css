@@ -68,6 +68,10 @@
     src: url('../public/assets/fonts/Roboto/thin-italic.ttf');
 }
 
+*, *::before, *::after {
+    user-select: none;
+    box-sizing: border-box;
+}
 
 html, body, #root {
     margin: 0;

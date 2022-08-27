@@ -3,7 +3,6 @@
   background-position: 95% 50%;
   background-repeat: no-repeat;
   background-size: 500px;
-  overflow-y: auto;
 }
 
 .layout {
@@ -40,5 +39,17 @@
   
   .layout {
     max-width: 100%;
+  }
+}
+
+@media (max-height: 600px) {
+  .layout {
+    position: relative;
+  }
+  
+  .gap::after {
+    content: " ";
+    display: block;
+    height: 270px;
   }
 }

@@ -19,7 +19,7 @@ export const ProductList = () => (
           id: 1,
           title: "Tuna Sushi",
         },
-      ].map(product => <ProductItem {...product} />)}
+      ].map((product, i) => <ProductItem key={i} {...product} />)}
     </div>
   </>
 );
