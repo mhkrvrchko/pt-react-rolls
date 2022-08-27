@@ -1,0 +1,27 @@
+.button {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #e1c3a2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333333;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  transition: opacity linear 200ms;
+}
+
+.button:hover {
+  filter: brightness(0.85);
+}
+
+.fixed {
+  width: 120px;
+  height: 40px;
+  padding: 2px;
+}
+
+.flexible {
+  padding: 10px 15px;
+}
