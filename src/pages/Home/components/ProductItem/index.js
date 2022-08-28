@@ -10,7 +10,10 @@ export const ProductItem = ({ id, title, order }) => {
   const handleItemClick = () => history.push(`/product/${id}`);
 
   return (
-    <figure key={id} className={classes.product + ' ' + classes[`product-order-${order}`]}>
+    <figure
+      key={id}
+      className={classes.product + " " + classes[`product-order-${order}`]}
+    >
       <img src={`assets/images/products/${id}.png`} />
       <figcaption>{title}</figcaption>
       <Button fixed onClick={handleItemClick}>

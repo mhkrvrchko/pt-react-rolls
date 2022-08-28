@@ -2,24 +2,13 @@ import classes from "./index.module.css";
 
 import { ProductItem } from "../ProductItem";
 
-export const ProductList = () => (
+export const ProductList = ({ products }) => (
   <>
     <h2 className={classes.title}>Most Ordered</h2>
     <div className={classes.layout}>
-      {[
-        {
-          id: 1,
-          title: "Tuna Sushi",
-        },
-        {
-          id: 1,
-          title: "Tuna Sushi",
-        },
-        {
-          id: 1,
-          title: "Tuna Sushi",
-        },
-      ].map((product, i) => <ProductItem key={i} {...product} />)}
+      {products.slice(0, 3).map((product) => (
+        <ProductItem key={product.id} {...product} />
+      ))}
     </div>
   </>
 );

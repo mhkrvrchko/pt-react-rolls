@@ -9,7 +9,11 @@ const formatWord = (word) => {
     const colorIndex = Math.floor(Math.random() * (colors.length - 1)) + 1;
     const color = colors[colorIndex];
 
-    return <span key={i} style={{ color }}>{letter}</span>;
+    return (
+      <span key={i} style={{ color }}>
+        {letter}
+      </span>
+    );
   });
 };
 

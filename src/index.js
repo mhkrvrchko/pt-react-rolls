@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import './index.css';
+import Mocks from './mocks';
 
 import {
   Home,
@@ -11,6 +12,8 @@ import {
 } from './pages';
 
 const RootElem = ReactDOM.createRoot(document.getElementById('root'));
+
+Mocks.setup();
 
 RootElem.render(
   <React.StrictMode>

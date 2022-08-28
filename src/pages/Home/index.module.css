@@ -36,7 +36,7 @@
   .background {
     background-image: unset;
   }
-  
+
   .layout {
     max-width: 100%;
   }
@@ -46,7 +46,7 @@
   .layout {
     position: relative;
   }
-  
+
   .gap::after {
     content: " ";
     display: block;

@@ -9,7 +9,7 @@
 }
 
 .background {
-  background-image: url('/public/assets/images/background/roulette.png');
+  background-image: url("/public/assets/images/background/roulette.png");
   background-repeat: no-repeat;
   background-size: 135px;
   background-position: 48% 185px;

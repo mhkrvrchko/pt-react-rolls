@@ -1,12 +1,23 @@
+
+
 import { Scroll, Layout, Button } from "../../components";
 import { useDevice } from '../../hooks';
 
 import classes from "./index.module.css";
 
 import { ProductList, ProductRoulette, Title } from "./components";
+import { useEffect, useState } from "react";
 
 export const Home = () => {
+  const [products, setProducts] = useState([]);
+
   const { isMobile } = useDevice();
+
+  useEffect(() => {
+    fetch('/api/products').then((data) => {
+      setProducts(data);
+    });
+  }, []);
   
   return (
     <Scroll>
@@ -21,7 +32,7 @@ export const Home = () => {
             </p>
             <Button className={classes.button}>Get to know more</Button>
           </div>
-          { isMobile ? <ProductRoulette /> : <ProductList /> }
+          { isMobile ? <ProductRoulette products={products} /> : <ProductList products={products} /> }
         </div>
       </Layout>
     </Scroll>
